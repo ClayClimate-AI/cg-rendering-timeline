@@ -63,7 +63,8 @@ export default function Footer() {
             <div
               key={name}
               title={name}
-              className="text-green-500/60 transition-colors hover:text-green-400"
+              className="text-green-400"
+              style={{ filter: 'drop-shadow(0 0 6px #22c55e) drop-shadow(0 0 12px #4ade80)' }}
             >
               {svg}
             </div>

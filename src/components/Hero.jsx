@@ -28,7 +28,12 @@ export default function Hero() {
         >
           ITAI 1370 · Lab L04
           {isPhase2 && (
-            <span className="ml-2 text-white/30">· Phase 2</span>
+            <span
+              className="ml-2 text-green-400"
+              style={{ filter: 'drop-shadow(0 0 6px #22c55e) drop-shadow(0 0 12px #4ade80)' }}
+            >
+              · Joseph Clay
+            </span>
           )}
         </motion.p>
 
