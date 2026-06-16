@@ -26,15 +26,14 @@ export default function Hero() {
             isPhase2 ? 'text-[#3dff7a]' : 'text-cyan'
           }`}
         >
-          ITAI 1370 · Lab L04
-          {isPhase2 && (
-            <span
-              className="ml-2 text-green-400"
-              style={{ filter: 'drop-shadow(0 0 6px #22c55e) drop-shadow(0 0 12px #4ade80)' }}
-            >
-              · Joseph Clay
-            </span>
-          )}
+          L04 · Turing Collective ·{' '}
+          <span
+            className="text-green-400"
+            style={{ filter: 'drop-shadow(0 0 6px #22c55e) drop-shadow(0 0 12px #4ade80)' }}
+          >
+            Joseph Clay
+          </span>
+          {' '}· ITAI 1370
         </motion.p>
 
         <motion.h1
