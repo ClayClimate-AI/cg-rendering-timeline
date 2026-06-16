@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Syne", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --color-void: #020c02;
+  --color-surface: #071207;
+  --color-accent: #16a34a;
+  --color-glow: #4ade80;
+  --color-cyan: #22c55e;
+  --color-magenta: #86efac;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-void text-white antialiased;
+    font-family: var(--font-body);
+  }
+
+  ::selection {
+    @apply bg-accent/40 text-white;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-linear-to-r from-cyan via-glow to-magenta bg-clip-text text-transparent;
+  }
+
+  .glass {
+    @apply border border-white/10 bg-white/5 backdrop-blur-xl;
+  }
+
+  .glow-line {
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      var(--color-accent) 20%,
+      var(--color-cyan) 50%,
+      var(--color-magenta) 80%,
+      transparent 100%
+    );
+  }
+}
